@@ -1,0 +1,44 @@
+[book]
+authors = ["B4 Investigate AB"]
+language = "en"
+src = "src"
+title = "myB4.ai Handbook"
+
+[output.html]
+default-theme = "dark"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/sc-code-stack/myb4handbook"
+edit-url-template = "https://github.com/sc-code-stack/myb4handbook/edit/main/{path}"
+##site-url = "https://sc-code-stack.github.io/myb4handbook/"
+##site-url = "/"
+##brand
+## favicon = ""
+## logo = ""
+## Styling
+#additional-css = ["theme/custom.css"]
+additional-js = ["./src/theme/custom.js"]
+copy-fonts = true
+additional-css = ["./mdbook-admonish.css", "./src/theme/custom.css"]
+
+[output.html.search]
+use-boolean-and = true
+limit-results = 40
+max-result-length = 250
+teaser-word-count = 40
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+
+## Plugins / preprocessors
+[preprocessor.toc]
+command = "mdbook-toc"
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+[preprocessor.katex]
+command = "mdbook-katex"
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
+
+
+
