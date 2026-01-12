@@ -29,9 +29,9 @@ We have on occassion experienced users not receiving the automatic email due to 
         <img src="../static/img/login_2.png" width = "40%">
     </p>
     
-    ```admonish tip "Alternative Verification"
-    If you do not have your authenticator app readily available, or if there is an outage causing disruptions to authenticators, or sms-verification, you can verify yourself by clicking **'Try another method'** and selecting email, which will send a one-time code to your user email address. 
-    ```
+```admonish tip "Alternative Verification"
+If you do not have your authenticator app readily available, or if there is an outage causing disruptions to authenticators, or sms-verification, you can verify yourself by clicking **'Try another method'** and selecting email, which will send a one-time code to your user email address. 
+```
 
 **You should now be logged in to myB4.ai, please explore the next chapters for more information**
 

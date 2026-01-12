@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     "Insights": "myB4 Insights is a snapshot of the most interesting examples from the Radar. Unlike the Radar, it uses a different set of selection criteria to pick out just a handful of examples which are a good place to begin your investigation. ",
     "Dashboard": "An overview of all the scopes on your organisation's tenant.",
     "Tenant": "The tenant is your organisation's workspace. Each tenant are kept separate from one another so there is no data leak, and users are given access to tenants on an organisational basis.",
-    "tenant": "The tenant is your organisation's workspace. Each tenant are kept separate from one another so there is no data leak, and users are given access to tenants on an organisational basis.", 
     "Scope": "A scope is one individual analysis, typically covering one or more business units for a specific time period (usually 12-18 months). Scopes are a way to segment your analysis between different units, and time frames.",
     "scope leader": "The user that created a given scope. The scope leader will have more change privileges than other users for their Scopes.",
     "scope period": "The time range covered by the data for a given scope, e.g. the date of the first transaction to the date of the last transaction in that upload. ",
@@ -28,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "Risk Index": "The Risk Index is a compound score, based on all the transactional flags, along with interaction terms, and materiality weights. The Risk Index runs from 0-100, and higher scores indicate a higher likelihood of fraud or financial damage associated with a counterparty.",
         "API": "A set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.",
         "DMC": "Dirty Money Constellations (DMCs) are systems of financial structures, often using secrecy jurisdictions and shell companies, designed to hide the origin of illegally obtained funds (dirty money) while maintaining a connection to the rightful owner. These centres facilitate complex transactions to obscure the source of money and are used by criminals and corrupt officials to launder wealth through methods like fake invoices or anonymous trusts. ",
-        "admin": "The tenant admin, or just admin, is a user type which has additional permissions to edit scopes, add and remove users, change permissions and access tags, and tweak the algorithms. Typically an organisation will only have 1-3 admin users at a time. ",
         "Viewer": "The Viewer is a tier in the tenant role hierarchy. It is the lowest tier, and they have completely uninvasive permissions. They are only permitted to open and observe radars, but are not able to create, edit or delete radars or scopes themselves. ",
         "Fraud Detective": "A Fraud Detective is a user role, which grants certain permissions, including creating, editing, deleting and uploading to their own scopes, as well as access to view and comment on any scopes they have security access to. "
   };

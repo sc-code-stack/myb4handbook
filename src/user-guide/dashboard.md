@@ -17,10 +17,10 @@ The Scope Dashboard contains an overview of the scopes that have been uploaded t
 
 **1.2 Scope Rating:** The scope rating is an overall rating of the riskiness of the counterparties in a scope. It is calculated as a weighted average of all Risk Indices in that scope, with more weight assigned to the highest ranked counterparties.
 
-**1.3 Security Tags:** This column shows the security tags allocated to a given scope. You can read more about security tags in [**Chapter 4.3 Security Tags**](../admin/security.md).
+**1.3 Security Tags:** This column shows the security tags allocated to a given scope. You can read more about security tags in [**Chapter 4.3: SecurityTags**](../admin/security.md).
 
 **1.4 Radars & Actions:** Here, you have access to the radar history, where you can [Roll Back to a Previous Radar](./dashboard.md#roll-back-radar), and the **Actions:**
-- **Upload:** Takes you to the upload page (see: [**Chapter 3.4 Upload & Execute](./upload.md))
+- **Upload:** Takes you to the upload page (see: [**Chapter 3.4: Upload & Execute**](./upload.md))
 - **Edit Scope:** Change scope name, description, period and/or security tags.
 - **Delete Scope:** Deletes the scope. Scope is recoverable for 21 days, after which it will be **permanently deleted**.
 - **Go to Radar:** Takes you to the radar for that scope.
