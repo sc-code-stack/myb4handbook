@@ -9,7 +9,7 @@ default-theme = "dark"
 preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/sc-code-stack/myb4handbook"
 edit-url-template = "https://github.com/sc-code-stack/myb4handbook/edit/main/{path}"
-##site-url = "https://sc-code-stack.github.io/myb4handbook/"
+site-url = "https://sc-code-stack.github.io/myb4handbook/"
 ##site-url = "/"
 ##brand
 ## favicon = ""
