@@ -21,8 +21,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
 
-      - name: Install mdBook
-        run: cargo install mdbook
+      - name: Install mdBook + admonish
+        run: !
+          cargo install mdbook mdbook-admonish
+          mdbook-admonish install
 
       - name: Build
         run: mdbook build
