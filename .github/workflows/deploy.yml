@@ -22,7 +22,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
 
       - name: Install mdBook + admonish
-        run: !
+        run: |
           cargo install mdbook mdbook-admonish
           mdbook-admonish install
 
