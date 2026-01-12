@@ -24,7 +24,7 @@ jobs:
       - name: Install mdBook + admonish (pinned)
         run: |
           cargo install mdbook --locked --version 0.4.40
-          cargo-install mdbook-admonish --locked --version 1.18.0
+          cargo install mdbook-admonish --locked --version 1.18.0
           mdbook-admonish install
 
       - name: Build
