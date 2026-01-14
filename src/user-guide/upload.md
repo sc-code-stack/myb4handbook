@@ -136,21 +136,22 @@ In general, you will find an error report like the one below whenever you make a
 The errors come in three categories:
 
 1. **Critical** errors, marked with a red warning triangle. 
-    ```admonish warning "Critical Errors"
-    While there may be other reasons why a scope fails to upload, critical errors are the most common. This category of errors are usually triggered when a necessary column is missing or contains corrupted data. A critical error will *almost* always result in a failure during pre-processing/execute.
-    ```
+```admonish warning "Critical Errors"
+While there may be other reasons why a scope fails to upload, critical errors are the most common. This category of errors are usually triggered when a necessary column is missing or contains corrupted data. A critical error will *almost* always result in a failure during pre-processing/execute.
+```
 
 1. **Warning** errors, marked with a yellow warning triangle.
-    ```admonish warning "Warning Errors"
-    Warning errors are less severe, and will almost never result in an actual failure to process/execute. However, they should not be ignored, as they include information about rows that have been removed as duplicates or corrupted data, as well as other errors that may impact the quality of the radar.
-    ```
+```admonish warning "Warning Errors"
+Warning errors are less severe, and will almost never result in an actual failure to process/execute. However, they should not be ignored, as they include information about rows that have been removed as duplicates or corrupted data, as well as other errors that may impact the quality of the radar.
+```
     
 1. **Informative** errors, marked with a grey circle.
-    ```admonish info "Informative Errors"
-    Informative errors are never going to be the reason while an upload has failed, and almost never has any impact on the quality of the analysis. Instead they may contain information about unimportant columns that have been omitted from upload. This category also contains deprecated errors (i.e. errors that used to be categorised higher, but are now considered unimpactful.
-    ```
+```admonish info "Informative Errors"
+Informative errors are never going to be the reason while an upload has failed, and almost never has any impact on the quality of the analysis. Instead they may contain information about unimportant columns that have been omitted from upload. This category also contains deprecated errors (i.e. errors that used to be categorised higher, but are now considered unimpactful.
+```
 
 Beyond the above, another common upload problem is if the user has refreshed the page before the files have been uploaded, which interrupts the process. 
+
 ```admonish warning "Refreshing During Upload"
 Note that you should never refresh the browser *before* you have received the message "Data has been uploaded". After that message appears, pre-processing begins, and the user is free to refresh, or even close the browser entirely without halting the process.
 ```
