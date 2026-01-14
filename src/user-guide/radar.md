@@ -105,3 +105,55 @@ Here, you see an example of a customer radar. Each row represents the analysis o
 <p align="center">
         <img src="../static/img/radar7.png" width = 100%">
     </p>
+
+### Sales
+This is a pattern indicator, which identifies relative patterns associated with possible fraudulent activity. There are three categories, denoted by 'H', 'R', and 'F'. These may appear alone, or in combination. They can be understood as follows: 
+- "F" = Large round numbers in invoices, and few or no credit notes. It often indicates customers who are getting "too good a deal". 
+- "H" = Lots of small invoices and few credit notes. It often indicates customers who receive discounts that are disproportionate to their size of business. 
+- "R" = Large invoices, and lots of small credit notes. It often indicates large customers who get too high a discount.
+
+### %Credit
+This indicates the value of credit notes as a percentage of the *total* transaction value. i.e. if it is below 50%, the net total will be positive, if it is 50%, net total is 0, if it is higher than 50%, net total will be negative, and if it is 100%, net total = credits. It can help you identify customers who may be getting too large discounts, who are returning deliveries often, or where abnormally much is going wrong in the delivery process. 
+
+### Giveaways
+This is a binary indicator, which is triggered when it looks like a large credit discount is tied to a specific delivery, or if pricings appear significantly lower than comparable customers.
+
+### Owing Customer
+A binary indicator which is triggered when net total is negative.
+
+### Ghosts
+A binary indicator, which is triggered for customers that have recently (in the scope period) been established, but which have no or few transactions in the period. This can indicate customers set up to boost KPIs for instance.
+
+### Unusual Credit
+This indicates situations where there are few credit notes, with high values (relative to the sales values), which could indicate bulk discounts, kickbacks or similar. 
+
+
+## The Supplier Radar
+Here, you see an example of a supplier radar. Each row represents the analysis of one supplier entity, for the period uploaded. Let us go through each column to understand what they contain.
+<p align="center">
+        <img src="../static/img/radar8.png" width = 100%">
+    </p>
+    
+### Influence
+A scale ranging from 0-100. Influence indicates the extent of dependency the supplier has on you, or if the supplier is sending multiple invoices in a short period. This could indicate exposure to leveraging if the supplier is providing a critical resource. 
+
+### Low Rebates
+A binary indicator which is triggered if the supplier provides little or nothing back in credit notes. It can indicate a lack of volume discounts, or nothing *ever* going wrong with deliveries (likely?). 
+
+```admonish tip "Low Rebates Relevance"
+Note that for many companies, volume discounts, and even corrections are handled without using credit notes, instead being baked into the invoices directly. If this is typical in your organisation, you may want to limit or remove the infuence of this factor by [**Calibrating the Algorithms**](../admin/callibration.md)
+```
+
+### %Round
+Indicates as a percentage the transactional amounts which are large and round (when correcting for currency value). Could be an indicator of laziness, arbitrary pricing, rounding up or similar. 
+
+### Lump Sum Cred
+Percentage indicator which indicates the number of Credit notes which are sent in round amounts, indicating arbitrary or lump sum credits, and sometimes disputes that have been resolved (but is it to your benefit, or that of the supplier?)
+
+### Unusual Invoice Numbers
+A percentage indicator, which captures the presence of several unusual invoice patterns. It will be triggered by bunched invoices, invoice numbers that are largely sequential, low invoice numbers (indicating a small company or one which has a unique sequence for you), invoice numbers with no discernible patterns etc. While the interpretation will vary depending on the actual pattern, this indicator tells you you should have a look at the invoice numbers, and try to understand why they present in that way. 
+
+```admonish info "Small Samples"
+If the supplier has fewer than 25 invoices in the period, this indicator is capped at 71, to prevent small sample sizes (where unusal patterns may be coincidental) from skewing scores too much.
+```
+
