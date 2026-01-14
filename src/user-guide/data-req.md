@@ -101,14 +101,17 @@ This short guide should help you ensure your data conforms to the expected stand
     
 1. **Regarding Transactional Files**
     - myB4.ai has been designed to use a narrow set of data, that is obtainable from any (well-maintained) ERP-system. Data records which are payments and receipts should **not** be included. 
+    
     ```admonish tip "Using Document Type"
     If you have payments/receipts in your transaction data, you can employ the 'document type' field to exclude them during the upload. Simply specify the codes for invoices and credit notes, and omit the codes for payments and receipts. See [**Chapter 3.4: Upload & Execute**](./upload.md) for a more thorough review. 
     ```
+
 1. **The Loose Money File**
     - The term 'loose money' is the most flexible definition we employ, and it can cover a variety of transactions depending on the context. Most succinctly, it can be said that it is transactions in and out of the organisation which are not part of the regular checks and balances. This can include bank transfers, cash payments/receipts, donations, and similar transactions where a corresponding customer/supplier record has not been created.
 
 1. **Text Fields**
     - The field “Text” appears in both the “Customer Invoice and Credit Note” as well as the “Supplier Invoice and Credit Note” files. Text is not a mandatory field, but since some ERP-systems allow a free-text line next to invoices and credit notes, should this field be extracted it should be extracted as a SINGLE field only. I.e., if multiple text lines exist, they should be concatenated. The maximum length a text field can be is 255 characters. Otherwise myB4 will truncate the field to the first 255 characters.
+    
     ```admonish tip "Alternative use of the text field"
     Since the text field is not strictly used by the algorithms, but instead are used to inform the human aspect of the analysis (see: [**Chapter 3.7: The Workflow**](./workflow.md)), if you do not have a text field specifically, you could instead use that to import any other information which might be interesting, such as line items, approver, etc.
     ```
