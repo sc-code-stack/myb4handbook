@@ -53,7 +53,7 @@ When a user has been deleted, they will be entirely unable to log in to myB4.ai.
 ```
 
 ### Restoring Deleted Users
-While the dialogue box seems somewhat fatalist in asserting that a deleted user *cannot* be restored, this is not entirely true. Admin users can still see deleted users, albeit greyed out. 
+While the dialogue box asserts that a deleted user *cannot* be restored, this is not entirely true. Admin users can still see deleted users, albeit greyed out. 
 
 <p align="center">
         <img src="../static/img/creating6.png" width = 100%">
